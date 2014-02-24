@@ -1,0 +1,1 @@
+<h1>This is the index view for Articles</h1>
