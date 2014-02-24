@@ -1,1 +1,12 @@
-<h1>This is the new view for Articles</h1>
+<h1>Write and Publish a New Article</h1>
+<% if @article.errors.any? %>
+	<div class="error_messages">
+		<h2>You're missing some fields</h2>
+		<ul>
+			<% @article.errors.full_messages.each do |message| %>
+			<li><%= message %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+<%= render :partial => 'form' %>
