@@ -1,1 +1,8 @@
-<h1>This is the show view for Articles</h1>
+<div>
+	<h1><%= @article.title %></h1>
+	<p>Published <%= @article.created_at.strftime('%b %d, %Y') %></p>
+	<p>Filed under: <% @article.categories.each do |category| %>
+    <%= category.name %>&nbsp;<% end %>
+  </p>
+  <div><%= @article.content %></div>
+</div>
