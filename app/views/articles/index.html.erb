@@ -5,7 +5,7 @@
 		<p>Published on <%= article.created_at.strftime('%b %d, %Y') %></p>
 		<p>
 			Filed under: <% article.categories.each do |category| %>
-										 <%= category.name %>&nbsp;
+										 <%= link_to category.name, category %>&nbsp;
 									 <% end %>
 		</p>
 		<p><%= truncate(article.content, length: 200) %></p>
