@@ -1,0 +1,67 @@
+// Reset
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+// Universal
+
+body {
+	background: #F9F9F9;
+	font-family: "proxima-nova",sans-serif;
+}
+
+.wrapper_wide {
+	width: 90%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.wrapper_skinny {
+	width: 65%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#main_header {
+	background: #FFF;
+	width: 100%;
+	padding: 1rem 0;
+	border-bottom: 5px solid #EEE;
+	.logo {
+		font-size: 2rem;
+		font-weight: bold;
+		letter-spacing: -2px;
+		text-transform: uppercase;
+		display: inline-block;
+		a {
+			text-decoration: none;
+			color: #282828;
+			transition: color .5s ease;
+			&:hover {
+				color: #e35050;
+			}
+		}
+	}
+	.main_nav {
+		float: right;
+		display: inline-block;
+	}
+}
