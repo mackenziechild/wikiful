@@ -1,15 +1,12 @@
-<h1>Welcome to Wikiful</h1>
-<p>Here's our 5 most recent articles.</p>
-
 <% @recent_articles.each do |article| %>
-	<article>
-		<h2><%= link_to article.title, article %></h2>
-		<p><%= article.created_at.strftime('%b %d, %Y') %></p>
-		<ul>
+	<article class="article_excerpts">
+		<p class="article_date">
+			<%= article.created_at.strftime('%b %d, %Y') %>&nbsp; &nbsp; -
 			<% article.categories.each do |category| %>
-				<li><%= link_to category.name, category %></li>
+				<span class="article_categories"><%= link_to category.name, category %></span>
 		  <% end %>
-	  </ul>
+	  </p>
+	  <h2 class="article_title"><%= link_to article.title, article %></h2>
 	  <p><%= truncate(article.content, length: 300) %></p>
 	</article>
 <% end %>

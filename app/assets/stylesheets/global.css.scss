@@ -21,11 +21,28 @@ time, mark, audio, video {
     background:transparent;
 }
 
+$sansSerif: "proxima-nova",sans-serif;
+$serif: "garamond-premier-pro-display",serif;
+
 // Universal
 
 body {
 	background: #F9F9F9;
-	font-family: "proxima-nova",sans-serif;
+	font-size: 1em;
+  line-height: 1.4;
+}
+
+h1 {
+	font-family: $sansSerif;
+	font-size: 200%;
+}
+
+p {
+	font-family: $serif;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: #6C6C6C;
+	padding: .5rem 0;
 }
 
 .wrapper_wide {
@@ -45,18 +62,19 @@ body {
 	width: 100%;
 	padding: 1rem 0;
 	border-bottom: 5px solid #EEE;
+	margin-bottom: 3rem;
 	.logo {
 		font-size: 2rem;
 		font-weight: bold;
 		letter-spacing: -2px;
-		text-transform: uppercase;
 		display: inline-block;
+		font-family: $sansSerif;
 		a {
 			text-decoration: none;
-			color: #282828;
+			color: #249AC4;
 			transition: color .5s ease;
 			&:hover {
-				color: #e35050;
+				color: #282828;
 			}
 		}
 	}

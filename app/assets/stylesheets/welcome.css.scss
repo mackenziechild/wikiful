@@ -1,3 +1,36 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$sansSerif: "proxima-nova",sans-serif;
+$serif: "garamond-premier-pro-display",serif;
+
+#welcome_controller {
+	.article_excerpts {
+		padding: 3rem 0;
+		border-bottom: 1px solid #eee;
+		&:first-child {
+			padding-top: 0;
+		}
+		.article_date {
+			font-size: 1.25rem;
+			font-style: italic;
+			color: #6C6C6C;
+		}
+		.article_categories {
+			padding: 0 .5rem;
+			a {
+				color: #249AC4;
+				text-decoration: none;
+				transition: color .5s ease;
+				&:hover {
+					color: #282828;
+				}
+			}
+		}
+		.article_title {
+			font-size: 1.75rem;
+			font-family: $sansSerif;
+			a {
+				text-decoration: none;
+				color: #282828;
+			}
+		}
+	}
+}
