@@ -12,6 +12,8 @@ $serif: "garamond-premier-pro-display",serif;
 			font-size: 1.25rem;
 			font-style: italic;
 			color: #6C6C6C;
+			margin-bottom: 0;
+			padding-bottom: 0;
 		}
 		.article_categories {
 			padding: 0 .5rem;
@@ -25,6 +27,7 @@ $serif: "garamond-premier-pro-display",serif;
 			}
 		}
 		.article_title {
+			margin-top: 0;
 			font-size: 1.75rem;
 			font-family: $sansSerif;
 			a {
