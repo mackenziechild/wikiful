@@ -1,8 +1,6 @@
-<div>
-	<h1><%= @article.title %></h1>
-	<p>Published <%= @article.created_at.strftime('%b %d, %Y') %></p>
-	<p>Filed under: <% @article.categories.each do |category| %>
-    <%= link_to category.name, category %>&nbsp;<% end %>
-  </p>
-  <div><%= @article.content %></div>
-</div>
+<h1><%= @article.title %></h1>
+<p>Published <%= @article.created_at.strftime('%b %d, %Y') %></p>
+<p>Filed under: <% @article.categories.each do |category| %>
+  <%= link_to category.name, category %>&nbsp;<% end %>
+</p>
+<div><%= @article.content %></div>
