@@ -24,6 +24,13 @@
 
 	<div class="container">
 		<div class="row">
+		  <div class="span4">
+		    <% flash.each do |name, msg| %>
+		      <%= content_tag :div, msg, id: "flash_#{name}" %>
+		    <% end %>
+		  </div>
+		</div>
+		<div class="row">
 			<div class="span3">
 				<p><%= link_to "Write a Wiki", new_article_path, :class => "btn btn-large" %></p>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
