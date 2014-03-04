@@ -31,6 +31,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+	gem 'rails_12factor'
+end
+
+group :assets do
+	gem 'therubyracer'
+	gem 'less-rails'
+	gem 'twitter-bootstrap-rails'
+end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -44,6 +53,3 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # gem 'debugger', group: [:development, :test]
 
 gem 'faker'
-gem 'twitter-bootstrap-rails'
-gem 'less-rails'
-gem 'therubyracer'
